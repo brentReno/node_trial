@@ -6,9 +6,9 @@ var urlEncodedParser = bodyParser.urlencoded({ extended: false});
 //custom module
  var testModule= require('../modules/testModule');
  var randomNumber = require('../modules/randomNumber');
-
+var portDecision = process.env.PORT || 3000;
 //spin up server
-app.listen('3000', 'localhost', function(){
+app.listen(portDecision, function(){
   console.log(' server is listening on port 3000');
 });
 
